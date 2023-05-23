@@ -13,8 +13,5 @@ RUN npm install
 # Copy the rest of the client code to the container
 COPY . .
 
-# Build the client application
-# RUN npm run build
-
-# Set the command to start the client
+# Set the command to start the client development server
 CMD [ "npm", "run", "dev" ]
