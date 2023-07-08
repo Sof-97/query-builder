@@ -1,0 +1,16 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/query-builder-392222/client-image:latest'
+      - './client'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/query-builder-392222/server-image:latest'
+      - './server'
+images:
+  - 'gcr.io/query-builder-392222/client-image:latest'
+  - 'gcr.io/query-builder-392222/server-image:latest'
