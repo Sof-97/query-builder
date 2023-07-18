@@ -1,0 +1,7 @@
+build:
+  docker:
+    web: client/Dockerfile
+    server: server/Dockerfile
+run:
+  web: npm run start --prefix client
+  server: npm run start --prefix server
