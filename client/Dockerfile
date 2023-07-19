@@ -13,5 +13,7 @@ RUN npm install
 # Copy the rest of the client code to the container
 COPY . .
 
+EXPOSE 5173
+
 # Set the command to start the client development server
 CMD [ "npm", "run", "dev" ]

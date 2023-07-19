@@ -4,4 +4,4 @@ build:
     server: server/Dockerfile
 run:
   web: npm run start --prefix client
-  server: npm run start --prefix server
+  server: npm run start --prefix servercd 

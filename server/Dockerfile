@@ -16,5 +16,7 @@ RUN npm install -g nodemon
 # Copy the rest of the server code to the container
 COPY . .
 
+EXPOSE 3005
+
 # Set the command to start the server with nodemon
-CMD [ "nodemon", "index.js" ]
+CMD [ "node", "index.js" ]
